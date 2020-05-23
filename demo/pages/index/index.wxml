@@ -1,0 +1,14 @@
+<!--index.wxml-->
+<view>
+  <view class="page__hd">
+    <view class="page__title">Color picker</view>
+    <view class="page__desc">点击色块取色</view>
+  </view>
+  <view style="background:{{rgb}};" bindtap="toPick" class="color-block">{{rgb}}</view>
+  <color-picker bindchangeColor="pickColor" initColor="{{rgb}}" show="{{pick}}" />
+  <view class="official"><official-account></official-account></view>
+  <view class="weui-footer weui-footer_fixed-bottom">
+    <view class="weui-footer__text">Copyright © 2020 MakerGYT</view>
+    <view class="weui-footer__link" bindtap="toCopy">https://github.com/MakerGYT/mini-color-picker</view>
+  </view>
+</view>

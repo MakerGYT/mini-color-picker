@@ -1,6 +1,6 @@
 {
   "name": "mini-color-picker",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "小程序拾色器（颜色选择器）组件,通过rgb作为数据格式",
   "miniprogram": "components/color-picker",
   "repository": {

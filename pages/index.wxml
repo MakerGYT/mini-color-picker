@@ -1,2 +1,0 @@
-<view style="background:{{rgb}};width:100px;height:24px;" bindtap="toPick"></view>
-<color-picker bindchangeColor="pickColor" initColor="{{rgb}}" show="{{pick}}" />
