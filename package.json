@@ -1,7 +1,7 @@
 {
   "name": "mini-color-picker",
   "version": "0.1.1",
-  "description": "小程序拾色器（颜色选择器）组件,通过rgb作为数据格式",
+  "description": "小程序拾色器（颜色选择器）组件,通过调色盘取色，用于用户自定义场景",
   "miniprogram": "components/color-picker",
   "repository": {
     "type": "git",
@@ -11,10 +11,11 @@
     "wechat",
     "小程序",
     "color",
-    "picker"
+    "picker",
+    "component"
   ],
   "author": "MakerGYT",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/MakerGYT/mini-color-picker/issues"
   },
