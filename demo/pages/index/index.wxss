@@ -4,10 +4,6 @@
   line-height: 200rpx;
   color: white;
 }
-.official {
-  margin:10px;
-  padding:10px;
-}
 
 .page__hd {
   padding: 40px;
@@ -24,29 +20,4 @@
   color: rgba(0, 0, 0, 0.5);
   text-align: left;
   font-size: 14px;
-}
-
-.weui-footer {
-  color: rgba(0, 0, 0, 0.3);
-  font-size: 14px;
-  line-height: 1.4;
-  text-align: center;
-}
-
-.weui-footer_fixed-bottom {
-  position: fixed;
-  bottom: 0;
-  padding-top: 16px;
-  padding-bottom: calc(16px + env(safe-area-inset-bottom));
-  left: env(safe-area-inset-left);
-  right: env(safe-area-inset-right);
-}
-
-.weui-footer__text {
-  padding: 0 16px;
-  font-size: 12px;
-}
-.weui-footer__link {
-  color: #7d90a9;
-  font-size: 12px;
 }

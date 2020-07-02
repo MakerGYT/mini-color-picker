@@ -6,9 +6,4 @@
   </view>
   <view style="background:{{rgb}};" bindtap="toPick" class="color-block">{{rgb}}</view>
   <color-picker bindchangeColor="pickColor" initColor="{{rgb}}" show="{{pick}}" />
-  <view class="official"><official-account></official-account></view>
-  <view class="weui-footer weui-footer_fixed-bottom">
-    <view class="weui-footer__text">Copyright © 2020 MakerGYT</view>
-    <view class="weui-footer__link" bindtap="toCopy">https://github.com/MakerGYT/mini-color-picker</view>
-  </view>
 </view>
