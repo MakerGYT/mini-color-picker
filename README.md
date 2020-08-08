@@ -72,6 +72,26 @@ npm install mini-color-picker --save
 <!-- index.wxml -->
 <view style="background:{{rgb}};width:100px;height:24px;" bindtap="toPick"></view>
 <color-picker bindchangeColor="pickColor" initColor="{{rgb}}" show="{{pick}}" />
+
+<!-- 夜间模式,且自定义标题和子标题 -->
+<color-picker darkTheme="{{true}}" title="选择颜色" subTitle="拖动滑块选择颜色" bindchangeColor="pickColor" initColor="{{rgb}}" show="{{pick}}" />
+
+<!-- 自定义背景色和文字颜色 且自定义标题和子标题 -->
+<color-picker title="选择颜色" subTitle="拖动滑块选择颜色" backgroundColor="#ccc" textColor="#fff" bindchangeColor="pickColor" initColor="{{rgb}}" show="{{pick}}" />
+
+
+<!-- 自定义背景色 且自定义标题和子标题 -->
+<color-picker title="选择颜色" subTitle="拖动滑块选择颜色" backgroundColor="#ccc" bindchangeColor="pickColor" initColor="{{rgb}}" show="{{pick}}" />
+
+<!-- 自定义文字颜色 且自定义标题和子标题 -->
+<color-picker title="选择颜色" subTitle="拖动滑块选择颜色" textColor="#fff" bindchangeColor="pickColor" initColor="{{rgb}}" show="{{pick}}" />
+
+<!-- 自定义标题和子标题 -->
+<color-picker title="选择颜色" subTitle="拖动滑块选择颜色" bindchangeColor="pickColor" initColor="{{rgb}}" show="{{pick}}" />
+
+<!-- 子标题 -->
+<color-picker subTitle="拖动滑块选择颜色" bindchangeColor="pickColor" initColor="{{rgb}}" show="{{pick}}" />
+
 ```
 ```js
 Page({
@@ -97,9 +117,15 @@ Page({
 | show | Boolean | false | 是 |是否显示 |
 |initColor| String | rgb(255,0,0)| 是　|初始色,rgb表示|
 |mask | Boolean |true | 否 |是否显示背景蒙层|
+| darkTheme | Boolean | false | 否 |夜间模式,注意: 此属性和backgroundColor及textColor不能同时设置. |
+| backgroundColor | String | 无 | 否 |弹出层背景色.此属性与darkTheme不能同时设置.优先级高于darkTheme属性. |
+| textColor | String | 无 | 否 |弹出层文字颜色.此属性与darkTheme不能同时设置.优先级高于darkTheme属性. |
+| title | String | "请选择颜色" | 否 |弹出层中标题文字 |
+| subTitle | String | "可通过下方滑块颜色预览" | 否 |弹出层中子标题文字 |
 |maskClosable | Boolean | true | 否 |点击背景蒙层是否可以关闭 |
 |bindchangeColor|eventhandler| | 否 | 取色后的回调,event.detail = {color} |
 |bindclose|eventhandler||否| 点击背景蒙层关闭掉color-picker后触发的事件|
+
 
 ## 开发
 **注意**:

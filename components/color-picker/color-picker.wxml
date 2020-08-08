@@ -1,6 +1,6 @@
 <view class="dialog {{show ? 'dialog_show' : ''}}">
   <view wx:if="{{mask}}" class="weui-mask" catchtap="close" catchtouchmove="close"></view>
-  <view class="weui-actionsheet {{show ? 'weui-actionsheet_toggle' : ''}}" catchtouchmove="preventdefault">
+  <view class="weui-actionsheet {{show ? 'weui-actionsheet_toggle' : ''}} {{(darkTheme && (!backgroundColor) && (!textColor))?'darkTheme':'lightTheme'}} " style="{{(backgroundColor)?'background-color:'+backgroundColor+';':''}}{{textColor?'color:'+textColor+';':''}}" catchtouchmove="preventdefault">
     <view class="weui-half-screen-dialog__hd">
       <view class="weui-half-screen-dialog__hd__side" bindtap="close">
         <a class="weui-icon-btn">
@@ -8,8 +8,8 @@
         </a>
       </view>
       <view class="weui-half-screen-dialog__hd__main">
-        <strong class="weui-half-screen-dialog__title">请选择颜色</strong>
-        <view class="weui-half-screen-dialog__subtitle">可通过下方滑块颜色预览</view>
+        <strong class="weui-half-screen-dialog__title">{{title}}</strong>
+        <view class="weui-half-screen-dialog__subtitle">{{subTitle}}</view>
       </view>
     </view>
     <movable-area class="target" style="background-color:{{hueColor}}">

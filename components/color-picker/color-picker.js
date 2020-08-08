@@ -16,6 +16,26 @@ Component({
       type: Boolean,
       value: false
     },
+    darkTheme: {
+      type: Boolean,
+      value: false
+    },
+    backgroundColor: {
+      type: String,
+      value: ''
+    },
+    textColor: {
+      type: String,
+      value: ''
+    },
+    title:{
+      type:String,
+      value:'请选择颜色',
+    },
+    subTitle:{
+      type:String,
+      value:'可通过下方滑块颜色预览',
+    }
   },
   data: {
 
