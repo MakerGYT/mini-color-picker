@@ -7,6 +7,9 @@
 [![](https://img.shields.io/badge/basicLib->=2.2.3-brightgreen?logo=wechat)]()
 [![GitHub stars](https://img.shields.io/github/stars/MakerGYT/mini-color-picker?style=social)](https://github.com/MakerGYT/mini-color-picker/stargazers)
 
+
+![mini-color-picker](https://cdn.jsdelivr.net/gh/makergyt/mini-color-picker/screenshot/poster.png)
+
 ## 特性:
 ### 现有方案分析
 - [we-color-picker](https://github.com/KirisakiAria/we-color-picker)
@@ -23,14 +26,14 @@
 ## 使用效果
 ### 截图
 
-![mini-color-picker](https://imgkr.cn-bj.ufileos.com/b136c18d-9142-4476-8779-cb0a34fa7bef.png)
-![mini-color-picker](https://imgkr.cn-bj.ufileos.com/dcb57311-2305-4f47-b8f8-4cdf3e824c9e.gif)
+![mini-color-picker](https://cdn.jsdelivr.net/gh/makergyt/mini-color-picker/screenshot/demo.png)
+![mini-color-picker](https://cdn.jsdelivr.net/gh/makergyt/mini-color-picker/screenshot/demo.gif)
 
 ### 样例
 
 [在开发者工具中预览效果](https://developers.weixin.qq.com/s/GcP4LBmv77h6)=>代码片段ID:`GcP4LBmv77h6`
 
-![微信搜索选色器](https://imgkr.cn-bj.ufileos.com/2a8b460e-60c7-45ec-b5eb-b981487f651d.png)
+![微信搜索选色器](https://cdn.jsdelivr.net/gh/makergyt/mini-color-picker/screenshot/search.png)
 ## 安装使用
 ### 1. 获取组件
 #### git
@@ -67,7 +70,7 @@ npm install mini-color-picker --save
 ```
 
 ### 3. 使用组件
-参考[/pages](https://github.com/makergyt/mini-color-picker/tree/master/demo/pages/index)
+参考[/pages](https://github.com/makergyt/mini-color-picker/tree/master/pages/index)
 ```html
 <!-- index.wxml -->
 <view style="background:{{rgb}};width:100px;height:24px;" bindtap="toPick"></view>

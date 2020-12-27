@@ -1,2 +1,6 @@
-demo/*
+pages/*
 screenshot/*
+app.*
+project.config.json
+sitemap.json
+.gitignore

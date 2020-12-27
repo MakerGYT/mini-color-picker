@@ -1,9 +1,0 @@
-<!--index.wxml-->
-<view>
-  <view class="page__hd">
-    <view class="page__title">Color picker</view>
-    <view class="page__desc">点击色块取色</view>
-  </view>
-  <view style="background:{{rgb}};" bindtap="toPick" class="color-block">{{rgb}}</view>
-  <color-picker bindchangeColor="pickColor" initColor="{{rgb}}" show="{{pick}}" />
-</view>

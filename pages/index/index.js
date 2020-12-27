@@ -12,5 +12,10 @@ Page({
     this.setData({
       rgb: e.detail.color
     })
+  },
+  toMore() {
+    wx.navigateToMiniProgram({
+      appId: 'wx56ff4f457b23ebd1',
+    })
   }
 })

@@ -1,15 +1,16 @@
 {
   "name": "mini-color-picker",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "小程序拾色器（颜色选择器）组件,通过调色盘取色，用于用户自定义场景",
   "miniprogram": "components/color-picker",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MakerGYT/mini-color-picker.git"
+    "url": "https://github.com/MakerGYT/mini-color-picker.git"
   },
   "keywords": [
     "wechat",
     "小程序",
+    "取色器",
     "color",
     "picker",
     "component"

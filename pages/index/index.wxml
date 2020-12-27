@@ -1,0 +1,11 @@
+<!--index.wxml-->
+<view>
+  <view class="page__hd">
+    <view class="page__title">Color picker</view>
+    <view class="page__desc">点击色块取色</view>
+  </view>
+  <view style="background:{{rgb}};" bindtap="toPick" class="color-block">{{rgb}}</view>
+  <navigator style="border:1px solid {{rgb}};margin-top:50rpx;color:#000;" class="color-block" target="miniProgram"
+    open-type="navigate" app-id="wx56ff4f457b23ebd1" path="pages/tabBar/tool/index">色值空间转换</navigator>
+<color-picker bindchangeColor="pickColor" initColor="{{rgb}}" show="{{pick}}" />
+</view>
