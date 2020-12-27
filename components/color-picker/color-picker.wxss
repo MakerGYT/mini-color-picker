@@ -13,7 +13,7 @@
   height: 600rpx;
   width: 600rpx;
   margin: 0 auto;
-  background-image: url(https://cdn.jsdelivr.net/gh/makergyt/mini-color-picker@0.1.2/screenshot/color_picker_mask.png);
+  background-image: url(https://cdn.jsdelivr.net/gh/makergyt/mini-color-picker@v0.1.2/screenshot/color_picker_mask.png);
   overflow: hidden;
   border: 0.5px solid rgba(0, 0, 0, 0.5);
 }

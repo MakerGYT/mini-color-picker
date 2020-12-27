@@ -1,4 +1,4 @@
-# mini-color-picker
+# Mini-color-picker
 
 > 小程序拾色器（颜色选择器）组件,通过调色盘取色，用于用户自定义场景。
 
@@ -31,7 +31,7 @@
 
 ### 样例
 
-[在开发者工具中预览效果](https://developers.weixin.qq.com/s/GcP4LBmv77h6)=>代码片段ID:`GcP4LBmv77h6`
+[在开发者工具中预览效果](https://developers.weixin.qq.com/s/YOF4QUmO7NmW)=>代码片段ID:`YOF4QUmO7NmW`
 
 ![微信搜索选色器](https://cdn.jsdelivr.net/gh/makergyt/mini-color-picker/screenshot/search.png)
 ## 安装使用
