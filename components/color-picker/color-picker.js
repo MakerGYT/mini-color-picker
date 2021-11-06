@@ -36,7 +36,7 @@ Component({
         const rect = res[0]
         if (rect) {
           this.SV = {
-            W: rect.width - 28, //block-size=28
+            W: rect.width - 28, // block-size=28
             H: rect.height - 28,
             Step: (rect.width - 28) / 100
           }
@@ -47,13 +47,36 @@ Component({
               h,s,v
             },
             x: Math.round(s * this.SV.Step),
-            y: Math.round((100-v )* this.SV.Step)
+            y: Math.round((100 - v) * this.SV.Step)
           })
         }
       })
     }
   },
   methods: {
+    areaTap(res) {
+      const $ = this.createSelectorQuery()
+      const target = $.select('.target')
+      target.boundingClientRect()
+      $.exec((r) => {
+        const rect = r[0]
+        if (rect) {
+          // 修正浮标位置, 魔法数字`-14`：去除半个浮标的宽度
+          this.setData({
+            x: res.detail.x - rect.left - 14,
+            y: res.detail.y - rect.top - 14
+          })
+
+          this.changeSV({
+            detail: {
+              x: this.data.x,
+              y: this.data.y
+            }
+          })
+          this.onEnd()
+        }
+      })
+    },
     onEnd() {
       this.triggerEvent('changeColor', {
         color: this.data.colorRes
